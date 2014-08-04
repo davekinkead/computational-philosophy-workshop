@@ -1,5 +1,6 @@
 ### Computational Philosophy Workshop
 
+
 # Introduction & Setup
 
 Welcome to the first session of the computational philosophy workshop!  The purpose of this workshop is to provide an informal (and non-assessed) environment in which we can actively explore how computational methods can be used as a method of philosophical enquiry.
@@ -16,17 +17,22 @@ The plan for this session is as follows:
 - agent based modelling
 - co-authoring our paper
 
+
 ## Readings
 
 Please ensure you've done the readings before the workshop as I want to spend as much quality time as possible discussing, analysing, and building stuff.
 
-1. Roman Frigg and Julian Reiss, [_The philosophy of simulation: hot new issues or same old stew?_](https://www-jstor-org.ezproxy.library.uq.edu.au/stable/40271311) Synthese Vol. 169, No. 3 (Aug 2009) pp. 593-613
-2. Models, Agent-Based Models, and the Modelling Cycle.
+1. Frigg, R. and Reiss, J. (2009). [_The philosophy of simulation: hot new issues or same old stew?_][j1]. Synthese, 169(3), pp.593--613. 
+2. Railsback, S. and Grimm, V. (2011). [_Agent-based and individual-based modeling: a practical introduction._][b1]  Chapter 1 _Models, Agent-Based Models, and the Modelling Cycle_
+
+[j1]: https://www-jstor-org.ezproxy.library.uq.edu.au/stable/40271311
+[b1]: http://goo.gl/1zQ1LQ
 
 
 ## Setting up your computer
 
 Try and set up your system before the first workshop so we can spend that time working through any installation problems.  We'll be using the following free and/or open-source software during the semester...
+
 
 ### Git
 
@@ -54,12 +60,14 @@ Github is an online extension to git.  It provides hosting for git repos and has
 2. [Fork](https://github.com/davekinkead/computational-philosophy-workshop/fork) & [watch](https://github.com/davekinkead/computational-philosophy-workshop/subscription) the [computational-philosophy-workshop](https://github.com/davekinkead/computational-philosophy-workshop) repo.  You'll then get email notifications whenever content gets updated.
 3. Learn how to ask a question in a distributed environment by [creating an issue](https://github.com/davekinkead/computational-philosophy-workshop/issues/new).
 
+
 ### Node
 
 > Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.  
 >  -- [NodeJS](http://nodejs.org/)
 
 Node is an asynchronous server side environment for running Javascript, and that is all you need to know about it.  Install node on your system by following [these instructions](http://nodejs.org/download/).
+
 
 ### Coffeescript
 
