@@ -1,8 +1,16 @@
 # Computational Philosophy Workshops
 
-![It is not wisdom but an intelligible commit message that makes a law.](static/leviathan.png)
+![It is not wisdom but a good commit message that makes a law.](static/leviathan.png)
 
 Ahoy-hoy philo-geeks!  I'm running an informal workshop on computational philosophy weekly during semester 2 starting 7 Aug 2014.
+
+---
+
+- Room 535, Michie Building
+- Thursdays 1300-1500
+- From 7 Aug 2014 until week 12
+
+---
 
 The general idea is to explore how computational methods can aid philosophical investigation, learning some agent based modelling, and get to grips with that proto game theorist extraordinaire, Thomas Hobbes of Malmesbury.  Every week, we'll cover a bit of literature, hack some code, and test some foundational assumptions of political philosophy.  
 
@@ -10,7 +18,7 @@ The goal for the end of the semester is to have learnt enough and done sufficien
 
 The current plan looks something like this:
 
-- Week #1 - Introduction & Setup
+- Week #1 - [Introduction & Setup](01-introduction.md)
 - Week #2 - Simulation, Segregation, and Game Theory
 - Week #3 - Code that's Nasty, Brutish, and Short
 - Week #4 - The Stag Hunt
