@@ -18,6 +18,73 @@ The plan for this session is as follows:
 - co-authoring our paper
 
 
+## Simulation & Philosophy
+
+Models have been a part of philosophy since the pre-Socratic days. When Thales proposed his cosmological thesis, he was using a model of the world that claimed that water was the essence of nature.
+
+Models are theories.  They abstract matters irrelevant and simplify by focusing only on the relata we need for understanding.
+
+Models are both descriptive and predictive.  Their descriptive use allows us to tell stories about how the world works, and aid our understanding of things.  Their predictive use gives them value as tools, and also acts a metric of their accuracy.
+
+Logic, for example, is a model of reason.  In propositional logic, we abstract away the content of propositions and because we are only concerned with the relationships between propositions.
+
+    A -> B
+    ~B
+    ---
+    ~A
+
+Computational models then are just the formalisation in code of theoretical models.
+
+### Do computer models bring anything unique to philosophy?
+
+While modelling in philosophy is nothing new or radical, the use of computational methods certain is.  Claims of novelty regarding computational methods are typically thought to be based around these broad areas: (@friggs2009 p595)
+
+- Metaphysical: Simulations create some kind of parallel world in which experiments can be conducted under more favourable conditions than in the ‘real world’.   
+- Epistemic: Simulations demand a new epistemology.  
+- Semantic: Simulations demand a new analysis of how models/theories relate to con- crete phenomena.  
+- Methodological: Simulating is a Sui Generis activity that lies ‘in between’ theorising and experimentation.  
+
+Friggs & Riess come to the conclusion that while computer simulations certain offer something new to science, they don't create anything new for the philosophy of science.  But how well does that argument hold up?
+
+Knowledge can be broadly classified as rational or empiric.  Simulations however, contribute to what could be called generative knowledge - knowledge that is based derived from empiric like data but concerns only assumption rather than the external world.
+
+A good example of this is emergence is flocking behaviour - see [video](http://www.youtube.com/watch?v=8vhE8ScWe7w&t=33s)
+
+Something that is certainly new in social philosophy is using simulations as coherence tests.  The idea, and the focus of these workshops, is to model the assumptions made by various political theories and simulate them to see if their claimed outcomes and conclusions really do occur.
+
+This is certainly something new to philosophy, and something that is only possible with the computational power of modern computers.
+
+Examples
+
+- [ants](http://agentscript.org/models/ants.html)
+- [flocks](http://agentscript.org/models/flock.html)
+
+## Agent Based Modelling
+
+Agent-based models typically have three elements:
+
+1. A set of agents, their attributes and behaviours.
+2. A set of agent relationships and methods of interaction: An underlying topology of connectedness defines how and with whom agents interact.
+3. The agents’ environment: Agents interact with their environment in addition to other agents.
+
+Within models, agents have the following essential characteristics:
+
+1. Agent are self-contained, modular, and uniquely identifiable individuals.
+2. Agent are autonomous and self-directed.
+3. Agents have state that varies over time. 
+4. Agents interact dynamically with their environment. 
+
+Agents may also have other useful characteristics:
+
+1. Agents may be adaptive.
+2. Agent may be goal-directed (strongly linked to autonomy)
+3. Agents may be heterogeneous.
+
+-- [Macal & North 2010](http://www.palgrave-journals.com/jos/journal/v4/n3/full/jos20103a.html for more details)
+
+
+
+
 ## Readings
 
 Please ensure you've done the readings before the workshop as I want to spend as much quality time as possible discussing, analysing, and building stuff.
