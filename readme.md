@@ -19,11 +19,12 @@ The goal for the end of the semester is to have learnt enough and done sufficien
 The current plan looks something like this:
 
 - Week #1 - [Introduction & Setup](01-introduction.md)
-- Week #2 - Simulation, Segregation, and Game Theory
-- Week #3 - Code that's Nasty, Brutish, and Short
-- Week #4 - The Stag Hunt
-- Week #5 - Hobbes vs Rousseau
-- Week #6 - TBA
+- Week #2 - [Modelling Segregation](02-models-of-segregation.md)
+- Week #3 - Simulation, Segregation, and Game Theory
+- Week #4 - Code that's Nasty, Brutish, and Short
+- Week #5 - The Stag Hunt
+- Week #6 - Hobbes vs Rousseau
+- Week #7 - TBA
 
 You don't need to know how to program to take part but you will need you own computer as well as a capacity to read [long run on sentences punctuated with generous helpings of semicolons](http://goo.gl/JiMJeP).  The workshops will be held somewhere TBA on campus at UQ and anyone - undergrad to staff - is welcome to attend. [RSVP on Facebook](https://www.facebook.com/groups/computationalphilosophy/).
 
