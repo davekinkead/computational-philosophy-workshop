@@ -12,18 +12,18 @@ We also setup our systems (or at least attempted to for Windows users) for actua
 
 To check everything is working, open your terminal (command line) and type (or copy each line):
 
-```shell
 
-coffee
-life = "solitary, poor, nasty, brutish and short"
-spawn = require('child_process').spawn
-spawn "open", ["http://www.youtube.com/watch?v=pATX-lV0VFk&t=40s"] if life is life
+		coffee
+		life = "solitary, poor, nasty, brutish and short"
+		spawn = require('child_process').spawn
+		spawn "open", ["http://www.youtube.com/watch?v=pATX-lV0VFk&t=40s"] if life is life
       
-```
 
 If you are on windows and that last line didn't work, try 
 
+
     spawn "explorer.exe", ["http://www.youtube.com/watch?v=pATX-lV0VFk&t=40s"] if life is life
+
 
 ## Models of Segregation
 
@@ -32,6 +32,8 @@ Thomas Schelling's Models of Segregation is an important work of mathematical so
 Shelling's paper shows that rather than being the exclusive result of racism, segregation can occur due to "the interplay of individual choices ... with collective results that bear no close relation to individual intent." (@shelling1969 p488)
 
 Rather than a system based model approach that Schelling used, we will be using agent based modelling to explore how individual agent preferences can result in emergent system level behaviour.
+
+I've created a new repo for this simulation [over here](https://github.com/davekinkead/models-of-segregation) with detailed explainations in the code.
 
 
 ## Readings
