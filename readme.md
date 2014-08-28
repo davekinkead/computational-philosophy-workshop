@@ -8,7 +8,7 @@ Ahoy-hoy philo-geeks!  I'm running an informal workshop on computational philoso
 
 - Fridays 1100-1300
 - From 7 Aug 2014 until week 12
-- rooms:
+- Location:
 
 		29th August			Steele 03-262
 		5th September		Steele 03-262
