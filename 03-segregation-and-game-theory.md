@@ -69,6 +69,10 @@ On other game that might be relevant is the snow drift.  here, players gain some
 		------------------
 		3, 1	|	0, 0
 
+## Workshop
+
+In this weeks workshop, we are going to reproduce part of the paper below.  After modeling segregation last week, we will produce an agent based model of the [spatialised prisoner's dilemma](http://dave.kinkead.com.au/spatialised-prisoners-dilemma/).
+
 
 ### Readings
 
