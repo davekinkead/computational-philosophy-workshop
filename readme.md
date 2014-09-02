@@ -35,8 +35,8 @@ The current plan looks something like this:
 - Week #1 - [Introduction & Setup](01-introduction.md)
 - Week #2 - [Modelling Segregation](02-models-of-segregation.md)
 - Week #3 - [Simulation, Segregation, and Game Theory](03-segregation-and-game-theory.md)
-- Week #4 - Code that's Nasty, Brutish, and Short
-- Week #5 - The Stag Hunt
+- Week #4 - [Dilemmas, Hunts, and Drifts](04-dilemmas-hunts-and-drifts.md)
+- Week #5 - Code that's Nasty, Brutish, and Short
 - Week #6 - Hobbes vs Rousseau
 - Week #7 - TBA
 
