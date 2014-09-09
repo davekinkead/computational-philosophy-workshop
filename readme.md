@@ -36,7 +36,7 @@ The current plan looks something like this:
 - Week #2 - [Modelling Segregation](02-models-of-segregation.md)
 - Week #3 - [Simulation, Segregation, and Game Theory](03-segregation-and-game-theory.md)
 - Week #4 - [Game Theory and the Zombie Apocalypse](04-game-theory-zombie-apocalypse.md)
-- Week #5 - Code that's Nasty, Brutish, and Short
+- Week #5 - [Code that's Nasty, Brutish, and Short](05-code-thats-nasty-brutish-and-short.md)
 - Week #6 - Hobbes vs Rousseau
 - Week #7 - TBA
 
