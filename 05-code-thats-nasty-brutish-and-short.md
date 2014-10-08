@@ -32,21 +32,22 @@ So what is the best payoff matrix to describe Hobbes' account of the state of na
 
 Hobbes' argument for the Leviathan seems to be one from necessity.  That the state of nature is so bad that every rational agent would willingly submit to an absolute sovereign.  His argument might go something like this:
 
-1. Agents are motivated purely by self interest (note this self interest is not necessarily rational)
+1. The state of nature is "solitary, poor, nasty, brutish, and short"
 
-2. Agents in the state of nature are sufficiently equal to harm or betray any other agent.
+	Self-interest and desire, along with awareness of other's self-interest and desire, ensure that unenforced mutual cooperation is not possible.
 
-3. Social cooperation for mutual advantage requires that agents honour their covenants.
+2. A state of mutual advantage can only be realised by submitting to a Leviathan
 
-4. Because of 1 & 2, 3 is not possible.
+	Non-absolute government is unstable owing to competition for power (see commentary on the english civil war)
 
-5. Therefore the state of nature is not one of mutual advantage.
+3. Therefore reason and self-interest dictate subjugation to a Leviathan.
 
-6. A state of mutual advantage can be realised by submitting to a Leviathan
 
-7. Mutual advantage under a Leviathan is preferable to the state of nature.
+## Modelling
 
-8. Therefore rational agents would prefer the Leviathan (from 5, 6, & 7)
+Let's examine Hobbes' premises one at a time.  Firstly, is the state of nature one where mutual cooperation cannot exist without some form of enform
+
+
 
 
 
@@ -156,4 +157,4 @@ _Leviathan_ Ch [13][13], [14][14], & [15][15]
 
 ### Chapter 16
 
-The final cause, end, or design of men (who naturally love liberty, and dominion over others) in the introduction of that restraint upon themselves, in which we see them live in Commonwealths, is the foresight of their own preservation, and of a more contented life thereby; that is to say, of getting themselves out from that miserable condition of war which is necessarily consequent, as hath been shown, to the natural passions of men when there is no visible power to keep them in awe, and tie them by fear of punishment to the performance of their covenants, and observation of those laws of nature set down in the fourteenth and fifteenth chapters.
+> The final cause, end, or design of men (who naturally love liberty, and dominion over others) in the introduction of that restraint upon themselves, in which we see them live in Commonwealths, is the foresight of their own preservation, and of a more contented life thereby; that is to say, of getting themselves out from that miserable condition of war which is necessarily consequent, as hath been shown, to the natural passions of men when there is no visible power to keep them in awe, and tie them by fear of punishment to the performance of their covenants, and observation of those laws of nature set down in the fourteenth and fifteenth chapters.
