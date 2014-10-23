@@ -37,8 +37,9 @@ The current plan looks something like this:
 - Week #3 - [Simulation, Segregation, and Game Theory](03-segregation-and-game-theory.md)
 - Week #4 - [Game Theory and the Zombie Apocalypse](04-game-theory-zombie-apocalypse.md)
 - Week #5 - [Code that's Nasty, Brutish, and Short](05-code-thats-nasty-brutish-and-short.md)
-- Week #6 - [Coalitions of the Willing](06-coalitions-of-the-willing.md)
+- Week #6 - [Coalitions of the Willing](06/readme.md)
 - Week #7 - [Democracy and Boarders](07-democracy-and-boarders.md)
+- Week #8 - [Information Cascasde](08/readme.md)
 
 You don't need to know how to program to take part but you will need you own computer as well as a capacity to read [long run on sentences punctuated with generous helpings of semicolons](http://goo.gl/JiMJeP).  The workshops will be held somewhere TBA on campus at UQ and anyone - undergrad to staff - is welcome to attend. [RSVP on Facebook](https://www.facebook.com/groups/computationalphilosophy/).
 

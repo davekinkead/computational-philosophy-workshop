@@ -10,7 +10,6 @@ This is the browser file where we pull together different parts of the simulatio
 		width = window.innerWidth || 600
 		space = null
 
-		game = window.location.search.match /\?game=(.+)&?/
 
 
 Next, we'll grab create our svg canvas, apply some event listeners and add it to the DOM.
@@ -33,11 +32,11 @@ Now we need to createsvg circles to represent our agents and bind them to the ac
 
 	
 		populate = () ->
-			space = simulation.agents(height, width)
+			space = simulation.create height, width
 			canvas.selectAll "circle"
 				.data space
 				.enter().append "circle"
-				.style "fill", (d) -> d.strategy.color 
+				.style "fill", (d) -> d.colour 
 				.style "opacity", 0.5
 				.attr "r", 8
 				.attr "cx", (d) -> d.x
@@ -59,10 +58,8 @@ We then write a loop where each svg circle triggers the move function for its bo
 			.duration 500
 			.attr "cx", (d) -> d.x
 			.attr "cy", (d) -> d.y
-			.attr "r", (d) -> 
-				if d.strategy.i is 3 then 10 else Math.max 3, (d.score / 10)
-			.attr "title", (d) -> "#{d.strategy.name} - #{d.score}"
-			.style "fill", (d) -> d.strategy.color
+			.attr "title", (d) -> "#{d.name} - #{d.score}"
+			.style "fill", (d) -> d.colour
 		
 
 		run = () ->
