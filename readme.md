@@ -1,6 +1,6 @@
 # Computational Philosophy Workshops
 
-![It is not wisdom but a good commit message that makes a law.](static/leviathan.png)
+![It is not wisdom but a good commit message that makes a law.](assets/leviathan.png)
 
 Ahoy-hoy philo-geeks!  I'm running an informal workshop on computational philosophy weekly during semester 2 starting 7 Aug 2014.
 

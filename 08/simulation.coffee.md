@@ -3,16 +3,7 @@
 ## Simulation Code
 
 
-First up, lets define the entity in our simulation.  We'll start with two - agents and the space they exist in.  Agents exist in a space hold a game strategy which is assigned randomly if none is provided.  We also give them a step length in case they will be walking.
-
-
-		class Agent
-			constructor: (@space, @strategy) ->
-				@step = 5
-				@colour = 'blue'
-
-
-Agents live in a space which we define as a 2D space representing the problem domain.  When we crate a space, we populate it with agents, and give it a neighbourhood depth value.
+First up, lets define the entities in our simulation.  We'll start with two - agents and the space they exist in.  A space is a 2D representation of the problem domain.  We instantiate a space with some x,y constraints and an agent profile.
 
 
 		class Space
@@ -26,9 +17,18 @@ We populate our space from an agent profile.  This profile contains an array suc
 		Space::populate = (agent_profile) ->
 			@agents = []
 			type = 0
-			for i,v in agent_profile
-				for n in [0..i]
-					@agents.push new Agent this, 'play nice'
+			for type, num of agent_profile
+				for n in [0..num]
+					@agents.push new Agent this, if type is 'red' then 0.33 else 0.66
+
+
+So who are these agents?  These simple fellas exist in a space and hold a credence for a particular belief.  We also give them a step length in case they will be walking, and a state machine to see if they have spoken.
+
+
+		class Agent
+			constructor: (@space, @credence=0.5) ->
+				@step = 3
+				@spoken = null
 
 
 Agents can be arranged in a space either deterministically or stochastically, and this arrangement can relate to either where they are (what x,y coordintate an agent occupies) or what they are (what type of agent is in that x,y coordintate).  The cluster method accepts 2 arguments between `0.0` and `1.0` relating the degree of determinism concerning where an agent is located and what the agent is.
@@ -59,8 +59,6 @@ The what-algorithm is a modified Fisher-Yates shuffle that is applied stochastic
 
 In spacial arranements, everybody is next to somebody - their neighbour.  A neighbourhood is simply a list of all the agents within an agent's depth perception.  Here we return everyone within a square from an x, y coordinate.
 
-This could in future be extended to allow von Newman neighbourhoods, and Moore neighbourhoods
-
 
 		Space::neighbourhood = (x, y) ->
 			@depth = Math.sqrt(@width * @height / @agents.length) + 1
@@ -71,29 +69,33 @@ This could in future be extended to allow von Newman neighbourhoods, and Moore n
 			neighbours
 
 
+In every tick of the simulation, agents will interact with others in their neighbourhood and update their credences based on the credences of their neighbours.  Currently, we don't need to use the interact method so we'll use it to simply invoke the adapt behaviour.
 
-Next, lets define some strategies a player could employ in any 2 player game.  These are specified by their inital move `i`, responding to cooperation move `c`, and responding to defection move `d`.  We'll also name these and give them pretty colours and store them in a list.
+	
+		Agent::adapt = () ->
+			neighbours = @space.neighbourhood(@x, @y)
+			blue_count = 0
+			red_count = 0
+			for neighbour in neighbours
+				blue_count = if neighbour.credence > 0.5 then 1 else 0
+				red_count = if neighbour.credence > 0.5 then 0 else 1
 
+			numerator = Math.pow(1-@credence, red_count) * @credence
+			denominator = Math.pow(1-@credence, red_count) * @credence +
+											Math.pow(@credence, blue_count) * (1-@credence)
+			@credence = numerator / denominator
 
-Now we turn to our game.  The browser will trigger the main game interface `interact(agent)` every tick.  Each agent finds their neighbours and plays against them for a number or rounds, with the agent score calcuated from the payoff matrix.  In every contest, we set the agent score and last_game values to 0.  We also throw in some Brownian motion to encourage disequilibrium.
+			@credence = 1.0 if @credence > 1.0
+			@credence = 0.0 if @credence < 0.0
+			@credence
 
-
-		interact = (agent) ->
-			walk agent
-			agent
 			
+Communicating beliefs
 
 
-We also need to define the interaction between agents.  The initial move is dictated by the agent's strategy while subsequent moves are based on an opponents last move.
+		Agent::communicate = () ->
+			@spoken = if @credence > 0.5 then 'blue' else 'red'
 
-
-
-Agents also need to update their strategy after each round.  We will do this only after all contests in a tick have finished and scores have been calculated.  If the agent score is the equal highest score, then no change to strategy will be made.
-
-
-		update = (agent) ->
-
-			agent
 
 
 Let's also throw in some logic for walking our agents around the space.  Movement could be intentionally directed or (as in this case), agents move to a random spot near by.
@@ -111,17 +113,49 @@ Let's also throw in some logic for walking our agents around the space.  Movemen
 			agent
 
 
-Now that we have defined our model, we need some functions to initiate and control behaviour.  We will instantiate the simulation by invoking the `agents` function.  This will create a space and populate it with agents according to our profile.  We will set the cluster values so that agents are perfectly ordered in space but randomly allocated to a space.  Try adjusting the facts to see what happens! 
+Now that we have defined our model, we need some functions to initiate and control behaviour.  We will instantiate the simulation by invoking the agents function.  This will create a space and populate it with agents according to our profile.  We will set the cluster values so that agents are perfectly ordered in space but randomly allocated to a space.  Try adjusting the facts to see what happens! 
 
 
 		agents = (height, width) ->
-			space = new Space height, width, [1985, 10, 5, 25]
-			space.cluster 1.0, 0.0
+			space = new Space height, width, {red: 1000, blue: 1000}
+			space.cluster 1.0, 0.5
+
+
+		reset = (agent) ->
+			agent.spoken = null 
+
+		talk = (agent) ->
+			agent.adapt()
+			walk agent
+			agent
+
+		adapt = () ->
 
 
 Finally, we declare our public API so that other modules can access it.
 
 		
-		module.exports = {create: agents, interact: interact, update: update}
+		simulation = {create: agents, interact: talk, adapt: adapt, reset: reset}
+		module.exports = simulation
+		simulation
 
 That's it. The simulation complete.
+
+Results....
+
+
+What we've seen is .....
+
+- uniform connectiveity with random distribution of belief and a truth bias in updating results in truth propagation 
+- random connectivity with random distribution of belief and a truth bias results in islands of ignorance.
+- uniform connectivity with a clustered distribution of belief and truth bias results in entrenched clustering of belief.
+- uniform connectivity with random distribution of belief and a bayesian update results in large clusters of belief.
+- random connectivity with random distribution of belief and a bayesian update results in small clusters of belief.
+- uniform connectivity and high segregation of belief and a bayesian update results in complete dominance of belief (latter beliefs dominating)
+
+
+
+
+
+
+
