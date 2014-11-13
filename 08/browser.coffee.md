@@ -4,7 +4,7 @@ This is the browser file where we pull together different parts of the simulatio
 
 
 		d3 = require '../assets/d3.min.js'
-		simulation = require './simulation.coffee.md'
+		simulation = require '../assets/simulation.coffee.md'
 		running = true
 		height = window.innerHeight || 600
 		width = window.innerWidth || 600
