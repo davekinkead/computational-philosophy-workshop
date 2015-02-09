@@ -3,7 +3,7 @@
 This is the browser file where we pull together different parts of the simulation and wrap it up in the browser.  We'll start out by importing our libraries and defining any global variables we might need.
 
 
-		d3 = require './assets/d3.min.js'
+		d3 = require '../assets/d3.min.js'
 		simulation = require './simulation.coffee.md'
 		running = true
 		height = window.innerHeight || 600

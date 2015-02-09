@@ -18,7 +18,7 @@ Game theory is the mathematical study of interactive decision making.  Fully def
 We can represent games in extensive (tree) or normal (strategic) form.  Here, we'll use normal form simply because of formating ease.  Normal form looks like a matrix listing player payoffs (2 player game below)
 
 
-		4, 3	| 	2, 1
+		4, 3		| 	2, 1
 		------------------
 		-1,-3	|	10,-5
 
@@ -38,9 +38,9 @@ Two important games we are going to focus on in this series are the prisoner's d
 The prisoner's dilemma is a non-zero sum, non-cooperative, symmetric game.  It occurs when the payoffs are maximised for cooperative behaviour but when individual self-maximising leads to negative sum outcomes.  The game in normal form looks like this:
 
 
-		2, 2	| 	0, 3
+		2, 2		| 	0, 3
 		------------------
-		3, 0	|	1, 1
+		3, 0		|	1, 1
 
 
 In the prisoner's dilemma, the relationship between payoffs means that even though cooperation has the best mutual payoff (2, 2), players will always defect (1, 1) because regardless of what the other player does, defection maximises individual payoff (3 beats 2 and 1 beat 0 - a Nash equilibrium).
@@ -57,17 +57,17 @@ In Robert Axelrod's [The Evolution of Cooperation](http://en.wikipedia.org/wiki/
 The stag hunt differs from the prisoner's dilemma in that the payoffs for mutual defection are different.  In this case, there are 2 Nash Equilibria - 2,2 and 1,1.  In the stag hunt, players gain most from mutual cooperation, gain some from mutual defection, but lose most if they are suckered. 
 
 	
-		2, 2	| 	0, 1
+		2, 2		| 	0, 1
 		------------------
-		1, 0	|	1, 1
+		1, 0		|	1, 1
 
 
 On other game that might be relevant is the snow drift.  here, players gain some from mutual cooperation, some from being suckered and most from suckering, but least from mutual defection - a classic free rider scenario.
 
 
-		2, 2	| 	1, 3
+		2, 2		| 	1, 3
 		------------------
-		3, 1	|	0, 0
+		3, 10	|	0, 0
 
 ## Workshop
 
