@@ -4,6 +4,7 @@
 
 This week we are going to being building some simple agent based models based on a classic paper from sociology - Thomas Schelling's [Models of Segregation][mos]
 
+
 ## Recap of Week One
 
 [Last week](01-introduction.md) we briefly covered some concepts of agent based simulation and some of the related philosophical notions that accompany this type of work.  The type of simulations we will be doing in these workshops could best be described as coherence test - simulations of political theory to test the coherence between assumptions, premises, and conclusions.
@@ -33,7 +34,7 @@ Shelling's paper shows that rather than being the exclusive result of racism, se
 
 Rather than a system based model approach that Schelling used, we will be using agent based modelling to explore how individual agent preferences can result in emergent system level behaviour.
 
-I've created a new repo for this simulation [over here](https://github.com/davekinkead/models-of-segregation) with detailed explainations in the code.
+I've created a new repo for this [simulation](http://dave.kinkead.com.au) over herewith detailed explainations in the [code](https://github.com/davekinkead/models-of-segregation) .
 
 
 ## Readings

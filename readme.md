@@ -31,14 +31,14 @@ The goal for the end of the semester is to have learnt enough and done sufficien
 
 The current plan looks something like this:
 
-- Week #1 - [Introduction & Setup](01/)
-- Week #2 - [Modelling Segregation](02/)
-- Week #3 - [Simulation, Segregation, and Game Theory](03/)
-- Week #4 - [Game Theory and the Zombie Apocalypse](04/)
-- Week #5 - [Code that's Nasty, Brutish, and Short](05/)
-- Week #6 - [Coalitions of the Willing](06/)
-- Week #7 - [Democracy and Boarders](07/)
-- Week #8 - [Information Cascasde](08/)
+- Week #1 - [Introduction & Setup](workshop-01/)
+- Week #2 - [Modelling Segregation](workshop-02/)
+- Week #3 - [Simulation, Segregation, and Game Theory](workshop-03/)
+- Week #4 - [Game Theory and the Zombie Apocalypse](workshop-04/)
+- Week #5 - [Code that's Nasty, Brutish, and Short](workshop-05/)
+- Week #6 - [Coalitions of the Willing](workshop-06/)
+- Week #7 - [Democracy and Boarders](workshop-07/)
+- Week #8 - [Information Cascasde](workshop-08/)
 
 You don't need to know how to program to take part but you will need you own computer as well as a capacity to read [long run on sentences punctuated with generous helpings of semicolons](http://goo.gl/JiMJeP).  The workshops will be held somewhere TBA on campus at UQ and anyone - undergrad to staff - is welcome to attend. [RSVP on Facebook](https://www.facebook.com/groups/computationalphilosophy/).
 

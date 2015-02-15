@@ -6,6 +6,7 @@ Last workshop, we created an agent based simulation of segregation effects based
 
 This week, we are going to add some more complexity to our models by incorporating game theory.  The workshop will largely be a reproduction of [this paper][grim] by Patrick Grimn so you'll need to read that and brush up on [some basic][wiki] [game theory][sep].
 
+
 ## Game Theory
 
 Game theory is the mathematical study of interactive decision making.  Fully defined games specify:

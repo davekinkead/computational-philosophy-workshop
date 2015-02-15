@@ -1,6 +1,5 @@
 ### Computational Philosophy Workshop
 
-
 # Introduction & Setup
 
 Welcome to the first session of the computational philosophy workshop!  The purpose of this workshop is to provide an informal (and non-assessed) environment in which we can actively explore how computational methods can be used as a method of philosophical enquiry.
@@ -22,7 +21,7 @@ The plan for this session is as follows:
 
 Models have been a part of philosophy since the pre-Socratic days. When Thales proposed his cosmological thesis, he was using a model of the world that claimed that water was the essence of nature.
 
-Models are theories.  They abstract matters irrelevant and simplify by focusing only on the relata we need for understanding.
+So models are just theories.  They abstract matters irrelevant and simplify by focusing only on the relata we need for understanding.
 
 Models are both descriptive and predictive.  Their descriptive use allows us to tell stories about how the world works, and aid our understanding of things.  Their predictive use gives them value as tools, and also acts a metric of their accuracy.
 
@@ -34,6 +33,7 @@ Logic, for example, is a model of reason.  In propositional logic, we abstract a
     ~A
 
 Computational models then are just the formalisation in code of theoretical models.
+
 
 ### Do computer models bring anything unique to philosophy?
 
@@ -59,30 +59,29 @@ Examples
 - [ants](http://agentscript.org/models/ants.html)
 - [flocks](http://agentscript.org/models/flock.html)
 
+
 ## Agent Based Modelling
 
 Agent-based models typically have three elements:
 
-1. A set of agents, their attributes and behaviours.
-2. A set of agent relationships and methods of interaction: An underlying topology of connectedness defines how and with whom agents interact.
-3. The agents’ environment: Agents interact with their environment in addition to other agents.
+  1. A set of agents, their attributes and behaviours.
+  2. A set of agent relationships and methods of interaction: An underlying topology of connectedness defines how and with whom agents interact.
+  3. The agents’ environment: Agents interact with their environment in addition to other agents.
 
 Within models, agents have the following essential characteristics:
 
-1. Agent are self-contained, modular, and uniquely identifiable individuals.
-2. Agent are autonomous and self-directed.
-3. Agents have state that varies over time. 
-4. Agents interact dynamically with their environment. 
+  1. Agent are self-contained, modular, and uniquely identifiable individuals.
+  2. Agent are autonomous and self-directed.
+  3. Agents have state that varies over time. 
+  4. Agents interact dynamically with their environment. 
 
 Agents may also have other useful characteristics:
 
-1. Agents may be adaptive.
-2. Agent may be goal-directed (strongly linked to autonomy)
-3. Agents may be heterogeneous.
+  1. Agents may be adaptive.
+  2. Agent may be goal-directed (strongly linked to autonomy)
+  3. Agents may be heterogeneous.
 
 -- [Macal & North 2010](http://www.palgrave-journals.com/jos/journal/v4/n3/full/jos20103a.html for more details)
-
-
 
 
 ## Readings
