@@ -1,19 +1,54 @@
-* { margin: 0; padding: 0; text-align: center; }
+* { margin: 0; padding: 0; text-align: center;  }
 
-html { font-size: 28px; font-family: 'Lato', sans-serif; }
+html { font-size: 18px; font-family: 'Lato', sans-serif;   line-height: 1.6; color: #333;}
 
-#info {
-	margin: auto; height: 600px; width: 50%;
-	position: absolute; 
-	top: 0; left: 0; bottom: 0; right: 0; 
-	color: #333; 
-	opacity: 0.9; 
+h1 { 
+  text-transform: uppercase; 
+  font-size: 2rem; 
+  line-height: 1em; 
+  font-weight: 900; 
+  z-index: 1;
 }
 
-h1 { text-transform: uppercase; font-size: 300%; line-height: 1em; margin-bottom: 1em; font-weight: 900; overflow: hidden;}
-p { background: #DFDFDF; opacity: 0.8; padding: 0.5em 0.25em; }
+p, blockquote, li {
+  margin: 2rem auto;
+  max-width:  800px;
+  text-align:  left;
+}
 
-#space { margin: 0 auto; background: #FFF; }
+li { padding-left: 3rem; list-style-position: inside; margin: 0 auto; }
 
-footer { position: absolute; right: 15px; bottom: 15px; text-align: right; color: #666; font-size: 0.8em; }
+blockquote {
+  font-style: italic;
+  color:  #666;
+}
+
+#overlay {
+  position: absolute;
+  top: 5rem;
+  left: 0; right: 0;
+  text-align: center;
+}
+
+#space { 
+  top: 0;
+  margin: 0; 
+  background: #FFF; 
+  z-index: 0;
+}
+
+#info {
+  margin: 5rem 0;
+}
+
+.center {
+  text-align: center;
+}
+
+footer { 
+  margin: 100px 1rem;
+  color: #666; 
+  font-size: 0.8em; 
+}
+
 footer a { color: #333; }
