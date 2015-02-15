@@ -8,6 +8,7 @@ This week we are going to explore game theory in more depth and see how the same
 
 We'll then finish up by modeling a three player game and see which strategies work best in the zombie apocalypse.
 
+
 ## Selected Quotes
 
 ### Hobbes
