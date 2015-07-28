@@ -57,7 +57,7 @@ The what-algorithm is a modified Fisher-Yates shuffle that is applied stochastic
       @agents
 
 
-In spacial arranements, everybody is next to somebody - their neighbour.  A neighbourhood is simply a list of all the agents within an agent's depth perception.  Here we return everyone within a square from an x, y coordinate.
+In spacial arrangements, everybody is next to somebody - their neighbour.  A neighbourhood is simply a list of all the agents within an agent's depth perception.  Here we return everyone within a square from an x, y coordinate.
 
 
     Space::neighbourhood = (x, y) ->
@@ -147,9 +147,9 @@ Results....
 
 What we've seen is .....
 
-- uniform connectiveity with random distribution of belief and a truth bias in updating results in truth propagation 
+- uniform connectivity with random distribution of belief and a truth bias in updating results in truth propagation.
 - random connectivity with random distribution of belief and a truth bias results in islands of ignorance.
 - uniform connectivity with a clustered distribution of belief and truth bias results in entrenched clustering of belief.
 - uniform connectivity with random distribution of belief and a bayesian update results in large clusters of belief.
 - random connectivity with random distribution of belief and a bayesian update results in small clusters of belief.
-- uniform connectivity and high segregation of belief and a bayesian update results in complete dominance of belief (latter beliefs dominating)
+- uniform connectivity and high segregation of belief and a bayesian update results in complete dominance of belief (latter beliefs dominating).
